@@ -1,0 +1,316 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link rel="stylesheet" href="https://unpkg.com/leaflet@1.3.1/dist/leaflet.css" integrity="sha512-Rksm5RenBEKSKFjgI3a41vrjkw4EVPlJ3+OiI65vTjIdo9brlAacEuKOiQ5OFh7cOI1bkDwLqdLw3Zg0cRJAAQ=="
+    crossorigin="" />
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.13/css/all.css" integrity="sha384-DNOHZ68U8hZfKXOrtjWvjxusGo9WQnrNx2sqG0tfsghAvtVlRW3tvkXWZh58N9jp"
+    crossorigin="anonymous">
+  <link href="https://fonts.googleapis.com/css?family=Zilla+Slab+Highlight:700" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Montserrat:900,900i" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Raleway:400,900" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+  <title>Title</title>
+</head>
+
+<body>
+  <nav id="navbar">
+    <div id="nav-menu">
+      <h1>Logo</h1>
+      <ul>
+        <li>
+          <a href="#">Home</a>
+        </li>
+        <li>
+          <a href="#about">About</a>
+        </li>
+        <li>
+          <a href="#why-us">Why us?</a>
+        </li>
+        <li>
+          <a href="#portfolio">Portfolio</a>
+        </li>
+        <li>
+          <a href="#contacts">Contacts</a>
+        </li>
+      </ul>
+    </div>
+    <a href="#" class="button" id="openSignin">Sign in/Sign up</a>
+  </nav>
+  <header id="header">
+    <h1>
+      <span>Some
+        <br>text</span>
+    </h1>
+  </header>
+  <div id="signin">
+    <div id="signinForm">
+      <h4>SIGN IN
+        <span id="closeSignin">&times;</span>
+      </h4>
+      <input id="signinLogin" type="text" placeholder="LOGIN">
+      <br>
+      <input id="signinPassword" type="password" placeholder="PASSWORD">
+      <br>
+      <input id="signinSubmit" type="submit" value="SIGN IN">
+      <br>
+      <a href="#">Forgot password?</a>
+      <br>
+      <a href="#" id="signup-link">Sign up</a>
+    </div>
+    <div id="signupForm">
+      <h4>SIGN UP
+        <span id="closeSignup">&times;</span>
+      </h4>
+      <input id="signupLogin" type="text" placeholder="LOGIN">
+      <br>
+      <input id="signupEmail" type="email" placeholder="EMAIL">
+      <br>
+      <input id="signupPassword" type="password" placeholder="PASSWORD">
+      <br>
+      <input id="signupSubmit" type="submit" value="SIGN UP">
+      <br>
+      <span id="msg">Already have an account?
+        <a href="#" id="signin-link">Sign in</a>
+      </span>
+    </div>
+  </div>
+  <section id="about">
+    <div class="content">
+      <h2>About our company</h2>
+      <p>Et dolor proident voluptate aute enim voluptate ipsum voluptate nisi dolore est. Officia ea duis labore amet ad cillum
+        cupidatat ad consequat amet deserunt occaecat consectetur culpa. Commodo in amet aute sunt nulla fugiat tempor excepteur
+        cillum eiusmod laboris aliquip. Quis commodo ullamco veniam nisi deserunt amet voluptate. Mollit fugiat cillum quis
+        eu magna irure eu irure do eiusmod voluptate do.</p>
+    </div>
+  </section>
+  <section id="why-us">
+    <div class="content">
+      <h2>Why us?</h2>
+      <div class="text">
+        <p>Et elit laborum consequat do dolore tempor excepteur adipisicing deserunt adipisicing. Esse proident esse duis et
+          eiusmod nulla Lorem labore reprehenderit. Pariatur consectetur esse ea ea aute elit nisi.</p>
+        <p>Laboris mollit amet ipsum laboris laboris sit fugiat. Minim fugiat velit labore minim commodo eiusmod laboris proident
+          elit aliquip. Et nulla consectetur sit consectetur ea id nostrud qui quis consectetur ullamco ex. Velit occaecat
+          amet proident anim ut consequat do dolore.</p>
+        <p>Sint nisi occaecat ea non ad minim laboris sit laboris dolor. Elit dolor amet aliqua nisi voluptate sunt minim non
+          adipisicing ea labore. Dolor eiusmod excepteur consequat ullamco Lorem aute.</p>
+      </div>
+    </div>
+  </section>
+  <section id="portfolio">
+    <div class="portfolio-items">
+      <figure class="item">
+        <img src="img/1.jpg">
+        <figcaption class="item-description">
+          <p>Project title</p>
+          <a href="#" class="modalLink">Read more
+            <i class="fas fa-arrow-circle-right"></i>
+          </a>
+        </figcaption>
+      </figure>
+      <figure class="item">
+        <img src="img/2.jpg">
+        <figcaption class="item-description">
+          <p>Project title</p>
+          <a href="#" class="modalLink">Read more
+            <i class="fas fa-arrow-circle-right"></i>
+          </a>
+        </figcaption>
+      </figure>
+      <figure class="item">
+        <img src="img/3.jpg">
+        <figcaption class="item-description">
+          <p>Project title</p>
+          <a href="#" class="modalLink">Read more
+            <i class="fas fa-arrow-circle-right"></i>
+          </a>
+        </figcaption>
+      </figure>
+      <figure class="item">
+        <img src="img/4.jpg">
+        <figcaption class="item-description">
+          <p>Project title</p>
+          <a href="#" class="modalLink">Read more
+            <i class="fas fa-arrow-circle-right"></i>
+          </a>
+        </figcaption>
+      </figure>
+      <figure class="item">
+        <img src="img/5.jpg">
+        <figcaption class="item-description">
+          <p>Project title</p>
+          <a href="#" class="modalLink">Read more
+            <i class="fas fa-arrow-circle-right"></i>
+          </a>
+        </figcaption>
+      </figure>
+      <figure class="item">
+        <img src="img/6.jpg">
+        <figcaption class="item-description">
+          <p>Project title</p>
+          <a href="#" class="modalLink">Read more
+            <i class="fas fa-arrow-circle-right"></i>
+          </a>
+        </figcaption>
+      </figure>
+    </div>
+  </section>
+  <div class="modal">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h1>Project Title</h1>
+        <span class="close">&times;</span>
+      </div>
+      <div class="modal-body">
+        <img src="img/1.jpg">
+        <p>Ea fugiat laboris nisi elit adipisicing laboris nisi labore velit sunt sit. Cillum culpa culpa id labore dolor duis
+          deserunt ad cillum. Incididunt consectetur nulla anim dolore culpa irure mollit. Deserunt voluptate et ad laborum
+          laboris et esse proident consequat cupidatat. Incididunt labore aute non nisi dolor ad. Pariatur adipisicing laboris
+          fugiat sunt nisi commodo ut nisi nulla labore ad cillum et officia. Fugiat laborum ullamco adipisicing sunt ea
+          do quis nisi culpa esse eu in duis. Incididunt nostrud incididunt ex laborum dolore occaecat est in minim dolor
+          culpa qui.</p>
+      </div>
+    </div>
+  </div>
+  <div class="modal">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h1>Project Title</h1>
+        <span class="close">&times;</span>
+      </div>
+      <div class="modal-body">
+        <img src="img/2.jpg">
+        <p>Tempor elit duis exercitation nulla qui adipisicing irure mollit anim reprehenderit dolore. Velit voluptate pariatur
+          ea Lorem enim ullamco nostrud veniam labore sunt dolor laboris dolore pariatur. Pariatur et adipisicing anim nulla
+          Lorem cillum occaecat dolore laboris voluptate mollit. Exercitation fugiat non labore aliquip tempor ad tempor
+          magna minim non cupidatat officia. Eiusmod anim sunt voluptate exercitation.</p>
+      </div>
+    </div>
+  </div>
+  <div class="modal">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h1>Project Title</h1>
+        <span class="close">&times;</span>
+      </div>
+      <div class="modal-body">
+        <img src="img/3.jpg">
+        <p>Est consequat sit do do est esse non labore ad commodo do eu pariatur. Excepteur sint sunt nostrud nulla eiusmod
+          id et occaecat irure. Ad aliquip aliqua adipisicing nisi sunt Lorem quis. Occaecat tempor laborum Lorem laborum.
+          Reprehenderit culpa aute elit est excepteur cillum deserunt minim sunt eu excepteur. Enim mollit aliqua ex sint
+          consectetur Lorem elit est sit. Id reprehenderit Lorem do aute pariatur..</p>
+      </div>
+    </div>
+  </div>
+  <div class="modal">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h1>Project Title</h1>
+        <span class="close">&times;</span>
+      </div>
+      <div class="modal-body">
+        <img src="img/4.jpg">
+        <p>Non ut et tempor cupidatat ullamco. Minim aute nisi enim ad laborum qui deserunt ad laboris aliquip qui. Anim sunt
+          ex sunt velit. Fugiat laboris ad est irure adipisicing eu est et irure consequat cupidatat eiusmod mollit. Adipisicing
+          pariatur ea esse dolor. Lorem irure officia laborum quis cupidatat reprehenderit laborum fugiat fugiat. Fugiat
+          Lorem reprehenderit dolore ea mollit pariatur qui ad sint. Mollit velit sunt eiusmod sunt est nulla aute proident
+          aute exercitation ex nisi. Aliqua duis exercitation qui dolor ad minim.</p>
+      </div>
+    </div>
+  </div>
+  <div class="modal">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h1>Project Title</h1>
+        <span class="close">&times;</span>
+      </div>
+      <div class="modal-body">
+        <img src="img/5.jpg">
+        <p>Eiusmod aliqua elit laboris est. Laborum adipisicing dolor laborum excepteur aliqua elit. Dolor cillum aliquip mollit
+          officia ad incididunt excepteur fugiat occaecat pariatur. Duis proident pariatur amet adipisicing aute aute id
+          enim sint officia duis voluptate culpa. Proident ea occaecat consectetur esse adipisicing quis cillum eiusmod.
+          Aute excepteur ea enim qui culpa deserunt nostrud occaecat ad consequat ad ad. Duis enim qui id proident ad amet
+          fugiat consequat laboris. Qui ut reprehenderit et exercitation sint proident occaecat consectetur cillum cillum
+          consectetur non irure. Aliqua esse ea laboris occaecat culpa aliqua. Culpa sint dolore veniam labore.</p>
+      </div>
+    </div>
+  </div>
+  <div class="modal">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h1>Project Title</h1>
+        <span class="close">&times;</span>
+      </div>
+      <div class="modal-body">
+        <img src="img/6.jpg">
+        <p>Magna do nulla non nulla eiusmod quis. Ullamco labore exercitation veniam veniam. Magna quis sit labore veniam consequat
+          dolore eiusmod anim fugiat proident Lorem. Et commodo voluptate ut pariatur commodo sint officia cupidatat eu reprehenderit
+          consectetur. Magna velit cupidatat reprehenderit aliqua. Voluptate non cupidatat consequat aliquip laborum.</p>
+      </div>
+    </div>
+  </div>
+  <section id="contacts">
+    <div id="map"></div>
+    <div class="content" id="address">
+      <h2>Contact us</h2>
+      <p>Labore laborum sint enim officia elit ad est elit aliqua ipsum.</p>
+      <p>Occaecat culpa velit ea occaecat sint reprehenderit esse sint adipisicing.</p>
+    </div>
+  </section>
+  <footer id="footer">
+    <div class="container">
+      <p>Copyright &copy; 2018</p>
+      <ul>
+        <li>
+          <a href="#">
+            <i class="fab fa-twitter"></i>
+          </a>
+        </li>
+        <li>
+          <a href="#">
+            <i class="fab fa-facebook-f"></i>
+          </a>
+        </li>
+        <li>
+          <a href="#">
+            <i class="fab fa-instagram"></i>
+          </a>
+        </li>
+        <li>
+          <a href="#">
+            <i class="fab fa-youtube"></i>
+          </a>
+        </li>
+        <li>
+          <a href="#">
+            <i class="fab fa-linkedin"></i>
+          </a>
+        </li>
+        <li>
+          <a href="#">
+            <i class="fab fa-google-plus"></i>
+          </a>
+        </li>
+      </ul>
+    </div>
+  </footer>
+  <script src="https://unpkg.com/leaflet@1.3.1/dist/leaflet.js" integrity="sha512-/Nsx9X4HebavoBvEBuyp3I7od5tA0UzAxs+j83KgC8PU0kgB4XiK4Lfe4y4cgBtaRJQEIFCW+oC506aPT2L1zw=="
+    crossorigin=""></script>
+  <script>
+    const mymap = L.map('map').setView([55.759171, 37.628434], 13);
+    L.tileLayer('https://api.tiles.mapbox.com/v4/{id}/{z}/{x}/{y}.png?access_token={accessToken}', {
+      attribution: 'Map data &copy; <a href="https://www.openstreetmap.org/">OpenStreetMap</a> contributors, <a href="https://creativecommons.org/licenses/by-sa/2.0/">CC-BY-SA</a>, Imagery © <a href="https://www.mapbox.com/">Mapbox</a>',
+      maxZoom: 18,
+      id: 'mapbox.streets',
+      accessToken: 'pk.eyJ1IjoibmlnaHRtYXJlb2ZiZWluZyIsImEiOiJjamh5dnJiZHkwb25nM3dtdG1jZG9teW92In0.6RVqYnJ4ErR_ma8ejVzTvw'
+    }).addTo(mymap);
+    const marker = L.marker([55.759171, 37.628434]).addTo(mymap);
+  </script>
+  <script src="script.js"></script>
+</body>
+
+</html>
